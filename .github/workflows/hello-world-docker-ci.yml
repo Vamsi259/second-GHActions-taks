@@ -17,6 +17,7 @@ jobs:
         uses: ./hello-world-docker-action
         with:
           who-to-greet: '@Vamsi'
+          run: echo "Welcome to second task"
 
       - name: Output time set in the container
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
